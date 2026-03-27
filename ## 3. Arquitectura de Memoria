@@ -1,0 +1,11 @@
+| Tipo de Memoria | Categoría de Datos     | Descripción                                     | Ejemplo de Entrada                                   |
+| --------------- | ---------------------- | ----------------------------------------------- | ---------------------------------------------------- |
+| Semántica (LTM) | Legislación            | Leyes, reformas y normas vigentes               | "Ley 1757 de 2015: Participación ciudadana"          |
+| Semántica (LTM) | Contexto Político      | Información sobre sistemas políticos y procesos | "Elecciones presidenciales: cada 4 años en Colombia" |
+| Semántica (LTM) | Problemáticas Sociales | Temas clave del activismo                       | "Desigualdad económica en zonas rurales"             |
+| Semántica (LTM) | Organizaciones         | ONG, colectivos y movimientos sociales          | "Greenpeace: organización ambiental global"          |
+| Episódica (LTM) | Perfil de Usuario      | Datos relevantes del usuario                    | "Nombre: Ana, interés: derechos humanos"             |
+| Episódica (LTM) | Interacciones Previas  | Historial de conversaciones                     | "Usuario preguntó sobre protestas pacíficas"         |
+| Episódica (LTM) | Participación          | Acciones realizadas por el usuario              | "Firmó petición sobre cambio climático"              |
+| Procedimental   | Estrategias de Acción  | Métodos para movilización y participación       | "Cómo organizar una marcha pacífica"                 |
+| Procedimental   | Comunicación           | Formas efectivas de difundir mensajes           | "Crear campañas en redes sociales"                   |
