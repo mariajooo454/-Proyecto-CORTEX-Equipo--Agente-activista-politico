@@ -1,0 +1,132 @@
+Agente Virtual de Información Política (Enfoque Neutral)
+
+##  Descripción general
+Describe la lógica interna de un agente virtual diseñado para responder preguntas sobre temas políticos de forma **informativa, neutral y basada en evidencia**.
+
+El sistema implementa un flujo de:
+* Procesamiento de entrada
+* Recuperación de información (LTM)
+* Uso de contexto (RAM)
+* Generación de respuesta
+* Gestión de memoria y olvido
+
+## Flujo general del sistema
+
+Usuario → Entrada → Análisis → Recuperación → Generación → Memoria → Respuesta
+
+##  Fases del sistema
+
+### 1. Entrada del usuario
+
+El sistema recibe una pregunta en lenguaje natural.
+**Ejemplo:**
+> “¿Qué propone la reforma fiscal en X país?”
+
+### 2. Preprocesamiento
+
+Se limpia y estructura la entrada:
+* Normalización de texto
+* Detección de idioma
+* Extracción de entidades (país, actores, fechas)
+
+### 3. Análisis de intención
+
+El sistema clasifica la intención de la consulta:
+* Informativa (explicación, contexto, comparación)
+* Opinativa o persuasiva
+
+**Regla:**
+Si la consulta es persuasiva → se redirige a respuesta informativa neutral.
+
+### 4. Uso de memoria (RAM)
+
+Se verifica si existe contexto previo en la conversación:
+
+IF contexto_en_RAM == TRUE:
+    usar contexto
+ELSE:
+    continuar sin contexto
+
+
+### 5. Recuperación de información (LTM)
+
+El sistema busca información relevante en memoria de largo plazo:
+* Base de conocimiento verificada
+* Documentos estructurados
+* Búsqueda semántica (embeddings)
+
+resultados = buscar_en_LTM(query)
+
+
+### 6. Validación de información
+
+Se evalúa la calidad de los resultados:
+
+IF resultados.relevantes AND resultados.confiables:
+    usar resultados
+ELSE:
+    generar respuesta con limitaciones
+
+**Criterios:**
+* Relevancia semántica
+* Confiabilidad de la fuente
+* Actualidad
+
+
+### 7. Generación de respuesta
+Se construye la respuesta final:
+* Lenguaje claro y neutral
+* Inclusión de múltiples perspectivas
+* Sin sesgos políticos
+
+respuesta = generar_respuesta(contexto + resultados)
+
+
+### 8. Actualización de memoria (RAM)
+
+Se guarda el contexto reciente:
+* Pregunta del usuario
+* Tema
+* Información relevante
+
+guardar_en_RAM(interaccion)
+
+
+##  Regla de olvido
+
+Define cuándo se elimina el contexto conversacional.
+
+### Condiciones de limpieza
+
+IF inactividad > 10 minutos:
+    limpiar_RAM()
+
+IF tokens_contexto > limite:
+    resumir_o_eliminar()
+
+IF cambio_de_tema == TRUE:
+    limpiar_parcial()
+
+
+### Tipos de limpieza
+
+* **Total:** elimina todo el contexto
+* **Parcial:** mantiene información relevante
+
+
+## Consideraciones éticas
+
+El agente:
+* No promueve ideologías
+* Evita persuasión política
+* Prioriza información verificable
+* Expone múltiples puntos de vista
+
+
+## Posibles mejoras
+
+* Ranking de fuentes por confiabilidad
+* Detección avanzada de sesgo
+* Memoria híbrida (RAM + resumen persistente)
+
+
