@@ -1,3 +1,6 @@
 https://miro.com/app/board/uXjVG9TpRBM=/?moveToWidget=3458764664583966950&cot=14
 Mi filtro funciona como un proceso organizado donde primero recibo el mensaje del usuario y verifica si es texto o imagen; si es imagen, lo envío a un proceso alternativo, pero si es texto continúa detectando el idioma para entenderlo correctamente. Luego reviso si el mensaje contiene insultos o contenido irrelevante, y en caso de que sí, lo descarto o lo ignora; Si no, paso a procesar el mensaje para comprender lo que el usuario quiere.
 Finalmente, genero una respuesta adecuada y la entrego como salida al usuario.
+
+<img width="2710" height="576" alt="Mi primer tablero (1)" src="https://github.com/user-attachments/assets/48240d05-5748-4f8c-a3db-1ced894e2629" />
+Added a link to the perception system for reference and clarified the filtering process for user messages.
