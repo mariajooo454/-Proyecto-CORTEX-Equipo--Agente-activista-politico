@@ -1,0 +1,22 @@
+## 5. Protocolo Anti-Sesgos 
+Para esta sección, hemos seleccionado un sesgo cognitivo fundamental identificado por Daniel Kahneman.
+
+###  Sesgo Identificado: Heurístico de Disponibilidad
+Es la tendencia a estimar la probabilidad de un evento o la importancia de un tema basándose en la facilidad con la que recordamos ejemplos (normalmente eventos recientes, vívidos o con alta carga emocional).
+**Riesgo para el Agente Activista:** El bot podría priorizar problemas "ruidosos" o mediáticos que están en tendencia en Twitter/X, ignorando problemáticas críticas pero menos "visibles" 
+(como la calidad del agua a largo plazo o trámites legislativos lentos). Esto genera un activismo reactivo y superficial.
+
+
+### Regla de Seguridad: 
+
+Para mitigar este sesgo de Kahneman, el agente aplicará la siguiente regla en su lógica de decisión en GitHub:
+> **Regla de Priorización Basada en Datos (Anti-Disponibilidad):**
+> "Antes de sugerir una acción masiva, el agente debe comparar la 'frecuencia de menciones en redes' contra 'indicadores de impacto real' (ej. número de personas afectadas, duración del problema).
+> **IF** el problema es solo tendencia en redes pero no tiene respaldo en datos históricos o técnicos,
+> **THEN** el bot debe sugerir una fase de 'Investigación' antes de la 'Movilización', evitando caer en el ruido mediático del momento."
+
+
+### Justificación Ética
+Al implementar esta regla, el agente se asegura de no ser un simple repetidor de algoritmos de redes sociales, manteniendo el foco en la incidencia política basada en la **verdad lógica** 
+y no solo en la **vistosidad emocional**.
+
